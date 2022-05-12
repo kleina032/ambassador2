@@ -1,0 +1,376 @@
+/* All CSS styles go here */
+
+html{
+  box-sizing: border-box;
+	width: 1275px;
+	font-family: broadsheet,serif;
+	font-weight: 400;
+	font-style: normal;
+	
+	
+}
+.Head{
+	font-family: "Old London Alternate";
+	src: url("file:///C:/Users/abiga/Creative%20Cloud%20Files/Ambassador%20Website/Assets/old_london/OldLondonAlternate.ttf"),
+  format('truetype');
+	font-size: 150px;
+}
+.h2{
+	font-family: "Old London Alternate";
+	src: url("file:///C:/Users/abiga/Creative%20Cloud%20Files/Ambassador%20Website/Assets/old_london/OldLondonAlternate.ttf"),
+  format('truetype');
+	font-size: 50px;
+}
+
+*,*:before, *:after{
+  box-sizing: inherit;
+}
+img{
+  max-width: 120%;
+}
+.navBar{
+	position: absolute;
+  width: 1275px;
+  height: 35px;
+  background-color: black;
+	left: 0px;
+	top: 0px;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	
+	display: grid;
+  grid-template-areas: 
+	  'A A A A A A H M T';
+	column-gap: 0px;
+	
+	text-align: left;
+	text-decoration: none;
+}
+.Ambassador{
+	position: relative;
+	top: 25%;
+	left: 20px;
+	color: white;
+	grid-area: 'A';
+}
+.Home{
+	position: relative;
+	top: 12%;
+	left: 490%;	
+	color: white;
+	text-align: center;
+	grid-area: 'H';
+	text-decoration: none;
+	width: 50px;
+}
+.Menu{
+	position: relative;
+	top: 12%;
+	left: 440%;
+	color: white;
+	text-align: center;
+	grid-area: 'M';
+	text-decoration: none;
+	width: 50px;
+}
+.TakeNBake{
+	position: relative;
+	top: 12%;
+	left: 260%;
+	color: white;
+	text-align: left;
+	grid-area: 'T';
+	text-decoration: none;
+	width: 125px;
+}
+
+/*Scrolling Marquee*/
+	.marquee {
+		top: 40px;
+		height: 30px;
+		width: 1525px;
+		border-bottom: 1px solid black;
+		padding: 0;
+	  margin: 0 auto;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  position: absolute;
+	}
+
+	.marquee span {
+	  display: inline-block;
+	  padding-left: 100%;
+	  animation: marquee 30s linear infinite;
+	}
+
+	.marquee2 span {
+	  animation-delay: 15.1s;
+	}
+
+	@keyframes marquee {
+	  0% {
+		transform: translate(0, 0);
+	  }
+	  100% {
+		transform: translate(-100%, 0);
+	  }
+	}
+
+/*Hero Section*/
+.Hero{
+	width: 1275px;
+	height: 325px;
+	position: relative;
+	left: 25%;
+	top: 170px;
+}
+
+/*Food & History Section*/
+.FoodAndHist{
+	width: 1275px;
+	height: 2875px;
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	left: -10px;
+	top: 175px;
+	
+}
+.FdHistBkgrnd{
+	position: relative;
+	top: 35px;
+}
+	/*Grid for Food section content*/
+.FoodContainer{
+	position: relative;
+	width: 1275px;
+	height: 875px;
+	display: grid;
+	grid-template-areas: 
+		'foodLeft foodRight';
+	
+	top: -1000px;
+	color: white;
+	overflow: hidden;
+}
+.FoodPhotoCol{
+	grid-area: 'foodLeft';
+	width: 632px;
+}
+.Pizza{
+	position: relative;
+	left: -200px;
+	top: -60px;
+}
+.FoodDescriptCol{
+	grid-area: 'foodRight';
+}
+#Food{
+	border: 0px;
+	padding: 0px;
+	margin: 20px;
+	letter-spacing: 25px;
+}
+.FoodPara{
+	width:500px;
+	text-align: left;
+	font-size: 18px;
+	letter-spacing: 2px;
+	line-height: 35px;
+}
+.TakeButton{
+	font-family: broadsheet,serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 35px;
+	text-align: center;
+	color: white;
+	
+	position: relative;
+	top:35px;
+	
+	background-color: black;
+	border: none;
+}
+.MenuButton{
+	font-family: broadsheet,serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 35px;
+	text-align: center;
+	color: white;
+	
+	position: relative;
+	left:50px;
+	top:35px;
+	
+	background-color: black;
+	border: none;
+	
+}
+	/*History section*/
+.histBkgrnd{
+	position: relative;
+	left: -10px;
+	top: -1000px;
+}
+
+#OurTale{
+	position: relative;
+	top: -1250px;
+	left: 50px;
+	color: white;
+	letter-spacing: 20px;
+}
+
+
+.HistContainer{
+	position: relative;
+	width: 1100px;
+	height: 1250px;
+	
+	line-height: 35px;
+	top: -1350px;
+	left: 50px;
+}
+.HistPara{
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+#Poem{
+	color: orange;
+}
+.PoemPara{
+	font-style: italic;
+	letter-spacing: 1px;
+	font-size: 18px;
+}
+
+/*Contact Section*/
+.Contact{
+	position: relative;
+	width: 1275px;
+	height: 870px;
+	top:240px;
+}
+	/*Grid for Contact section content*/
+#Contact{
+	position: relative;
+	left: 50px;
+	letter-spacing: 10px;
+	font-size: 90px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+.ContactContainer{
+	position: relative;
+	width: 1275px;
+	height: 450px;
+	display: grid;
+	grid-template-areas: 
+		'contactLeft contactRight';
+	
+	overflow: hidden;
+	top: 25px;
+}
+.MapCol{
+	grid-area: 'contactLeft';
+	width: 632px;
+}
+.ContactInfoCol{
+	grid-area: 'contactRight';
+}
+.ContactInfo{
+	position: relative;
+	font-size: 18px;
+	text-align: left;
+	left: -50px;
+	top: -20px;
+	
+}
+.Map{
+	position: relative;
+	height: 500px;
+	width:632px;
+	left: 50px;
+}
+
+
+
+/*Footer Section*/
+.Footer{
+	position: relative;
+	width: 1285px;
+	height: 212px;
+	background-color: black;
+	left: -10px;
+	bottom: 0px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	
+	display: grid;
+	grid-template-areas: 
+		'Address Hours Contact NavFoot';
+}
+.ColOne{
+	position: relative;
+	grid-area: 'Address';
+	color: white;
+	letter-spacing: 2px;
+	
+	
+	left: 50px;
+	top: 20px;
+	text-align: justify;
+	
+
+}
+.ColTwo{
+	grid-area: 'Hours';
+	color: white;
+	letter-spacing: 2px;
+	
+	position: relative;
+	top: 10px;
+
+}
+.ColThree{
+	grid-area: 'Contact';
+	color: white;
+	letter-spacing: 2px;
+	
+	position: relative;
+	top: 10px;
+	left: -20px;
+
+}
+.ColFour{
+	grid-area: 'NavFoot';
+	color: white;
+	
+	text-decoration: none;
+	list-style-type: none;
+	letter-spacing: 2px;
+	
+	position: relative;
+	top: 10px;
+	left: -70px;
+	line-height: 1.75;
+}
+.FacebookIcon{
+	position: relative;
+	top: 10px;
+	left: -4px;
+}
+/*new type of code to help with responsive design*/
+/*In plain terms, it says "when the screen is a minium width, activate these style
+rules." The rules follow inside of the curly brackets like any other CSS*/
+@media screen and (min-width: 768px){
+
+}
+@media screen and (min-width: 1024px){
+
+}
